@@ -1,0 +1,7 @@
+yfinance
+pandas_ta
+transformers
+torch
+rich
+typer
+ddgs
