@@ -7,7 +7,7 @@ from rich.console import Console
 from finpulse.scanner import run_analysis, run_scanner
 from finpulse.report import print_report
 
-app = typer.Typer(help="FinPulse-Free: Advanced Institutional-Grade Analysis CLI")
+app = typer.Typer(help="FinPulse-Free: Local Market Analysis & Technical Intelligence CLI")
 console = Console()
 
 @app.command()

@@ -20,7 +20,7 @@ def print_report(ticker: str, current_price: float, ta_score: float, sentiment_s
     # Format sentiment onto a 0-100 scale
     sentiment_mapped = (sentiment_score + 1.0) / 2.0 * 100
     
-    table = Table(title=f"FinPulse STRICT Advanced Report: {ticker.upper()}")
+    table = Table(title=f"FinPulse Core Analysis: {ticker.upper()}")
     
     table.add_column("Metric", justify="left", style="cyan", no_wrap=True)
     table.add_column("Value/Score", justify="right", style="magenta")
@@ -43,7 +43,7 @@ def print_report(ticker: str, current_price: float, ta_score: float, sentiment_s
     else:
         signal_style = "bold yellow"
         
-    table.add_row("STRICT FINAL SCORE", f"{final_score:.1f}/100", "100%")
+    table.add_row("Final Probability Score", f"{final_score:.1f}/100", "100%")
     
     console.print(table)
     console.print(f"\n>> [bold]RECOMMENDATION:[/bold] [{signal_style}] {signal} [/{signal_style}]\n")
