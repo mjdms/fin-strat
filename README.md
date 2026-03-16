@@ -1,4 +1,4 @@
-# FinPulse-Free
+# Fin-Strat
 
 A 100% free, local CLI tool for institutional-grade financial analysis. It combines multi-timeframe technical indicators, live news sentiment (processed offline via FinBERT), and automated market screening to help you find the best investment opportunities without needing paid API keys.
 
@@ -32,32 +32,32 @@ A 100% free, local CLI tool for institutional-grade financial analysis. It combi
 
 ## Usage
 
-FinPulse-Free comes with several modes:
+Fin-Strat comes with several modes:
 
 ### 1. Analyze a single asset
 Deep dive into a specific ticker:
 ```bash
-python -m finpulse.main analyze AAPL
+python -m finstrat.main analyze AAPL
 ```
 Add `--finbert` to use the more accurate (but slower) financial AI model.
 
 ### 2. Market Screener (Leaderboard)
 See which stocks are ranked highest in a category:
 ```bash
-python -m finpulse.main screen tech
-python -m finpulse.main screen crypto
+python -m finstrat.main screen tech
+python -m finstrat.main screen crypto
 ```
 
 ### 3. Background Scanner
 Watch multiple stocks for immediate alerts:
 ```bash
-python -m finpulse.main scan AAPL,TSLA,BTC-USD --interval 300
+python -m finstrat.main scan AAPL,TSLA,BTC-USD --interval 300
 ```
 
 ### 4. Interactive Mode
 Analyze one asset after another without restarting:
 ```bash
-python -m finpulse.main interactive
+python -m finstrat.main interactive
 ```
 
 ---
